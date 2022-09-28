@@ -14,13 +14,21 @@
 
 seconds = [1.23, 1.45, 1.02]
 current = 1.11
-
+seconds.append(current)
+print(seconds)
 # Remove item 1.45 from seconds.
 seconds = [1.23, 1.45, 1.02, 1.11]
-
+seconds.remove(1.45)
+print(seconds)
 
 # Remove items 1.45, 1.02, and 1.11 from seconds.
 seconds = [1.23, 1.45, 1.02, 1.11]
+seconds.remove(1.45)
+print(seconds)
+seconds.remove(1.02)
+print(seconds)
+seconds.remove(1.11)
+print(seconds)
 
 
 ################################comparison operators#########################
@@ -31,26 +39,49 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # <= less or equal
 # == equal
 # != different or not equal to
+my_bool= 10 == 25
+print(my_bool) #false
 
+my_bool = 5 + 5 == 10 - 0
+print(my_bool)  # true 
 
+my_bool = 'white' == "White".lower()
+print(my_bool)
 
+my_bool = 4 < 5 and 5 >= 6
+print(my_bool)
 
+my_bool = (55 == 55) and (5 == 2 +3)
+print(my_bool)
+
+text = "this sentence is short"
+# my_bool = ('sentence' in text) and ('short' in text)
+my_bool = ('sentence' in text) or ('phyton' in text)
+print(my_bool)
 # Comparison Operators Practice  1:
 # Create two variables (num1 and num2) with the following values: 36 and 17. Check if num1 is greater than or equal to num2 and store the result of that comparison in a variable called my_bool
-
-
-
+num1= 36
+num2= 17
+my_bool= num1 >= num2
+print(my_bool)
 
 # Comparison Operators Practice  2:
 # Create two variables (num1 and num2):
 # Inside num1, store the result of the square root of 25
 # Inside num2, store the number 5.
 # Check if num1 is equal to num2 and store the result of that comparison in a variable called my_bool.
+num1= 5
+num2= 5
+my_bool = num1 == num2
+print(my_bool)
 
 
 # Comparison Operators Practice #3:
 # Create two variables (num1 and num2):
-
+num1= 64*3
+num2= 24*8
+my_bool= num1 == num2
+print(my_bool)
 # Inside num1, store the result of 64 x 3
 
 # Inside num2, store the result of 24 x 8
@@ -68,7 +99,11 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 
 # Logical Operators Practice #1
 # Create three variables (num1, num2, and num3):
-
+num1= 36
+num2= 72/2
+num3= 48
+my_bool= num1 > num2 and num1 < num3 
+print(my_bool)
 # Inside num1, store the value 36
 
 # Inside num2, stores the result of the operation 72/2
@@ -82,7 +117,11 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 
 # Logical Operators Practice #2
 # Create three variables (num1, num2, and num3):
-
+num1= 36
+num2= 72/2
+num3= 48
+my_bool= num1 > num2 or num1 < num3 
+print(my_bool)
 # Inside num1, store the value 36
 
 # Inside num2, stores the result of the operation 72/2
@@ -103,7 +142,11 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # are not found in the sentence below, and store the result (a boolean) in a variable called my_bool:
 
 # "When something is important enough, you do it even if the odds are against you" - Elon Musk
-
+text = "When something is important enough, you do it even if the odds are against you"
+word1= "success"
+word2= "technology"
+my_bool = (word1 in text) or (word2 in text)
+print(my_bool)
 
 
 
@@ -142,14 +185,14 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # "You can't drive. You need to have a license"
 
 # Use the code base already provided to set up the appropriate flow control structure and check those conditions.
-age = 16
-has_license = False
+#age = 16
+#has_license = False
 
-"You can drive"
+#"You can drive"
 
-"You can't drive yet. You must be 18 years old and have a license"
+#"You can't drive yet. You must be 18 years old and have a license"
 
-"You can't drive. You need to have a license"
+#"You can't drive. You need to have a license"
 
 # Decision Making Practice #3
 # To access a certain job, the candidate must be able to program in Python and speak French.
