@@ -145,7 +145,7 @@ print(my_bool)
 text = "When something is important enough, you do it even if the odds are against you"
 word1= "success"
 word2= "technology"
-my_bool = (word1 in text) or (word2 in text)
+my_bool = ("word1" in text) and ('word2' in text)
 print(my_bool)
 
 
